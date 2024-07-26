@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+
+* { /* resetando configuração de margin e padding em toda página*/
+    margin: 0;
+    padding: 0;
+}
+
+body {/* todo o conteúdo visual da página*/
+    background-color: #d1cec3e3; /* cor de fundo*/
+    color: rgb(167, 8, 8); /* cor da fonte */
+    height: 100vh;/*altua do corpo*/
+    box-sizing: border-box; /*limitar a margem*/
+}
+
+.destaque_titulo /*strong*/
+{
+    color: #ccc348; /*cor fonte*/
+}
+
+.apresentacao/* main */
+{
+    margin: 10% 15%; /* Define a margem ao redor do elemento (10% no topo e na base, 15% nas laterais) */
+    display: flex; /* Define o layout como flexbox / /*so usamos display flex quando temos caixas dentro de caixas/
+    /* fle-direction: row (section (col esquerda) e img (col direita) ) */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    justify-content: space-between; /* espaço entre as colunas */
+}
+
+.apresentacao_conteudo /* section */
+{
+    width: 50%; /* section ocupa 50% da largura da caixa main */
+    display: flex;  /* Define o layout como flexbox */
+    justify-content: center; /* espaço entre as colunas */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    flex-direction: column;  /* define a direção do flexbox */
+    gap: 40px; /* espaço entre os itens da section*/
+}
+.apresentacao_conteudo_titulo /* config do h1 */
+{
+    font-size: 34px; /* Define o tamanho da fonte */
+    font-family: "Krona One", sans-serif; /* define qual sera a fonte */ 
+    font-weight: 400; /* espessura da fonte */
+    font-style: normal; /* define o estilo da fonte */
+}
+
+.apresentacao_conteudo_texto /* config do p */
+{
+    font-size: 22px; /* Define o tamanho da fonte */
+    font-family: "Montserrat", sans-serif; /* define qual sera a fonte */ 
+    font-weight: 400; /* espessura da fonte */
+    font-style: normal; /* define o estilo da fonte */
+}
+
+.apresentacao_conteudo_links /* config do div */
+{
+    display: flex; /* 2 caixas - botoes - tag (a) */
+    justify-content: space-between; /* espaço entre as colunas */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    flex-direction: nowrap; /* direção dos botoes */
+    gap: 10px; /* espaço entre as caixas */
+}
+
+.apresentacao_conteudo_links_botoes /* botões dos links (a) */
+{
+    display: inline-block; /* Define o como um bloco inline */
+    width: 280px; /* largura do botão */
+    padding: 10px 20px; /* distancia entre o texto e borda do botão*/
+    background-color: #b8ffb8; /* cor de fundo */
+    color: #000000; /* cor do texto */ 
+    border: none; /* Remove a borda do botao */
+    border-radius: 5px; /* Define bordas arredondadas com um raio */
+    cursor: pointer; /* Define o cursor do mouse como ponteiro quando passado sobre o botao */
+    text-decoration: none; /* tira o sublinhado do texto */
+    font-size: 18px; /* tamanho da fonte */
+    transition: background-color 0.3s ease; /* Define uma transição suave de 0.3s para a cor de fundo do botao */
+    text-align: center;
+    font-family: "Montserrat", sans-serif; /* define qual sera a fonte */ 
+}
+
+
