@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/* Importa as fontes "Krona One" e "Montserrat" do Google Fonts */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Remove o espaçamento padrão e configura o modelo de caixa para incluir bordas e padding */
+}
+
+body {
+    background-color: #d1cec3e3; /* Cor de fundo do corpo */
+    color: rgb(167, 8, 8); /* Cor do texto */
+    font-family: Arial, sans-serif; /* Fonte padrão para o corpo */
+}
+
+.apresentacao { /* Seção principal de apresentação */
+    padding: 9%; /* Espaçamento interno de 9% */
+    display: flex; /* Exibe o conteúdo em um layout flexível */
+    flex-direction: row; /* Direção dos elementos em linha */
+    justify-content: space-between; /* Espaço igual entre os elementos */
+}
+
+.apresentacao_conteudo { /* Coluna da esquerda */
+    display: flex; /**/
+    flex-direction: column; /* Direção dos elementos em coluna */
+    gap: 40px; /* Espaçamento entre os elementos */
+    width: 615px; /* Largura da coluna */
+}
+
+.apresentacao_conteudo_titulo { /* Título principal (h1) */
+    font-size: 36px; /* Tamanho da fonte */
+    font-family: "Krona One", sans-serif; /* Fonte específica para o título */
+}
+
+.apresentacao_conteudo_texto { /* Parágrafo de texto */
+    font-size: 24px; /* Tamanho da fonte */
+    font-family: "Montserrat", sans-serif; /* Fonte específica para o texto */
+}
+
+.apresentacao_conteudo_links { /* Contêiner para os links de redes sociais */
+    display: flex; /**/
+    flex-direction: row; /**/
+    justify-content: space-between; /**/
+    align-items: 32px; /* Alinhamento vertical dos elementos */
+}
+
+.apresentacao_conteudo_links_botoes { /* Botões de links de redes sociais */
+    display: flex; /* */
+    flex-direction: row; /*  */
+    border: solid 2px rgb(70, 46, 19); /* Borda dos botões */
+    width: 378px; /* Largura dos botões */
+    text-align: center; /* Centraliza o texto */
+    border-radius: 8px; /* Arredonda as bordas */
+    font-size: 24px; /* */
+    font-weight: 600px; /* Peso da fonte */
+    text-decoration: none; /* Remove a sublinhado do link */
+    color: black; /* Cor do texto */
+    font-family: "Montserrat", sans-serif; /* Fonte específica do texto dos botões */
+    padding: 21.5px 0px; /* Espaçamento interno superior e inferior */
+    justify-content: center; /* Centraliza o conteúdo do botão */
+    gap: 16px; /* Espaçamento entre os ícones e o texto */
+    transition: 0.3s; /* Animação suave para mudanças de estilo */
+    cursor: pointer; /* Muda o cursor para pointer ao passar o mouse */
+}
+
+.apresentacao_conteudo_links_botoes:hover { /* Efeito ao passar o mouse sobre os botões */
+    border-color: rgb(163, 7, 7); /* Muda a cor da borda */
+    background-color: #f3a9a9e3; /* Muda a cor de fundo */
+}
+
+.img_icone { /* Estilo para os ícones das redes sociais */
+    width: 50px; /* Largura dos ícones */
+    height: 50px; /* Altura dos ícones */
+}
+
+.destaque_titulo { /* Estilo para o texto em destaque (strong) */
+    color: #410101; /* Cor do texto em destaque */
+}
+
+.destaque_titulo2 { /* Estilo para o segundo texto em destaque */
+    color: rgb(255, 0, 0); /* Cor vermelha para o texto */
+}
+
+.subititulo { /* Estilo para o subtítulo */
+    color: rgb(0, 8, 31); /* Cor do texto */
+    flex-direction: column; /**/
+    font-family: "Krona One", sans-serif; /* Fonte específica */
+    font-weight: 400; /* Peso da fonte */
+    font-size: 24px; /* Tamanho da fonte */
+}
+
+.perfil-imagem { /* Estilo para a imagem de perfil */
+    width: 500px; /* Largura da imagem */
+    object-fit: cover; /* Ajusta a imagem para cobrir o contêiner */
+    transition: box-shadow 0.3s; /* Transição para sombra */
+}
+
+.perfil-imagem:hover { /* Efeito ao passar o mouse sobre a imagem de perfil */
+    box-shadow: 50px 30px 25px rgba(0, 0, 0, 0.2); /* Sombra ao redor da imagem */
+    width: 610px; /* Aumenta a largura da imagem */
+}
+
+.rodape { /* Estilo para o rodapé */
+    background-color: #5f5636e3; /* Cor de fundo do rodapé */
+    padding: 24px; /* Espaçamento interno do rodapé */
+    color: black; /* Cor do texto do rodapé */
+    text-align: center; /* Centraliza o texto */
+    font-family: "Montserrat"; /* Fonte específica */
+    font-size: 24px; /* Tamanho da fonte */
+    font-weight: 400; /* Peso da fonte */
+}
+
+    
+/*texto em preto (#000000), 
+e o texto deve ser centralizado e usar a fonte 'Montserrat', 
+tamanho 24px e peso 400. Além disso, o rodapé deve ter um padding de 24px.*/
